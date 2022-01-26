@@ -4,6 +4,7 @@ import Hero from '../Hero/Hero';
 import Features from '../Features/Features';
 import Footer from '../Shared/Footer/Footer';
 
+
 const Home = () => {
     return (
         <div>

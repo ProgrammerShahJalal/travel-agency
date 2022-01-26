@@ -60,16 +60,16 @@ const Footer = () => {
 
                     <div className='text-center text-xl text-white'>
                         <div className='w-10 h-10 rounded-full inline-block mx-1 pt-1 bg-yellow-500 hover:bg-yellow-600 '>
-                            <i className='fab fa-facebook-f'></i>
+                            <i className='cursor-pointer fab fa-facebook-f'></i>
                         </div>
                         <div className='w-10 h-10 rounded-full inline-block mx-1 pt-1 bg-yellow-500 hover:bg-yellow-600 '>
-                            <i className='fab fa-linkedin-in'></i>
+                            <i className='cursor-pointer fab fa-linkedin-in'></i>
                         </div>
                         <div className='w-10 h-10 rounded-full inline-block mx-1 pt-1 bg-yellow-500 hover:bg-yellow-600 '>
-                            <i className='fab fa-twitter'></i>
+                            <i className='cursor-pointer fab fa-twitter'></i>
                         </div>
                         <div className='w-10 h-10 rounded-full inline-block mx-1 pt-1 bg-yellow-500 hover:bg-yellow-600 '>
-                            <i className='fab fa-google-plus-g'></i>
+                            <i className='cursor-pointer fab fa-google-plus-g'></i>
                         </div>
                     </div>
                 </div>

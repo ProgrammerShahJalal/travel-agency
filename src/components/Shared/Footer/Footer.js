@@ -7,7 +7,10 @@ const Footer = () => {
                 <div className='max-w-7xl mx-auto'>
                     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-2">
                         <div className="mb-5">
-                            <h4 className='text-2xl pb-4'>Company</h4>
+                            <div>
+                            </div>
+                            <img className='w-20' src="https://i.ibb.co/fpHvWdG/logo.png" alt="" />
+                            <h4 className='text-2xl pb-4'>JTour</h4>
                             <p className='text-gray-500'>
                                 A435  Lost Street <br />
                                 Zero Point, PB456463 <br />
@@ -41,7 +44,7 @@ const Footer = () => {
                             <p className='text-gray-500 pb-2'>Join 35000+ others and don't miss the wonderful travel tips, discount and more.</p>
                             <form className='flex flex-row flex-wrap'>
                                 <input className='text-gray-500 w-2/3 p-2 focus:border-yellow-500' type="email" placeholder='Type your email' />
-                                <button className='p-2 w-1/3 bg-yellow-500 text-white hover:bg-yellow-600'>Subscribe</button>
+                                <button className='p-2 w-1/3 bg-fuchsia-500 text-white hover:bg-fuchsia-600'>Subscribe</button>
                             </form>
                         </div>
                     </div>
@@ -59,16 +62,16 @@ const Footer = () => {
                     </div>
 
                     <div className='text-center text-xl text-white'>
-                        <div className='w-10 h-10 rounded-full inline-block mx-1 pt-1 bg-yellow-500 hover:bg-yellow-600 '>
+                        <div className='w-10 h-10 rounded-full inline-block mx-1 pt-1 bg-fuchsia-500 hover:bg-fuchsia-600'>
                             <i className='cursor-pointer fab fa-facebook-f'></i>
                         </div>
-                        <div className='w-10 h-10 rounded-full inline-block mx-1 pt-1 bg-yellow-500 hover:bg-yellow-600 '>
+                        <div className='w-10 h-10 rounded-full inline-block mx-1 pt-1 bg-fuchsia-500 hover:bg-fuchsia-600'>
                             <i className='cursor-pointer fab fa-linkedin-in'></i>
                         </div>
-                        <div className='w-10 h-10 rounded-full inline-block mx-1 pt-1 bg-yellow-500 hover:bg-yellow-600 '>
+                        <div className='w-10 h-10 rounded-full inline-block mx-1 pt-1 bg-fuchsia-500 hover:bg-fuchsia-600'>
                             <i className='cursor-pointer fab fa-twitter'></i>
                         </div>
-                        <div className='w-10 h-10 rounded-full inline-block mx-1 pt-1 bg-yellow-500 hover:bg-yellow-600 '>
+                        <div className='w-10 h-10 rounded-full inline-block mx-1 pt-1 bg-fuchsia-500 hover:bg-fuchsia-600'>
                             <i className='cursor-pointer fab fa-google-plus-g'></i>
                         </div>
                     </div>

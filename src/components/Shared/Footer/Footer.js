@@ -22,13 +22,11 @@ const Footer = () => {
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3" />
                             </svg>
                         </div>
-                        <div className="row">
-                            <div className="footer-icon">
-                                <i className="fab fa-facebook-f"></i>
-                                <i className="fab fa-twitter"></i>
-                                <i className="fab fa-linkedin-in"></i>
-                                <i className="fab fa-google-plus-g"></i>
-                            </div>
+                        <div className="flex gap-3 mt-2">
+                            <i className="cursor-pointer fab fa-facebook-f"></i>
+                            <i className="cursor-pointer fab fa-twitter"></i>
+                            <i className="cursor-pointer fab fa-linkedin-in"></i>
+                            <i className="cursor-pointer fab fa-google-plus-g"></i>
                         </div>
                     </div>
                     <div className="flex-auto w-1/4">

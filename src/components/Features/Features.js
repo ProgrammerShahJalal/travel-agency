@@ -6,10 +6,10 @@ export default function Features() {
                 <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 sm:static">
                     <div className="sm:max-w-lg">
                         <h1 className="text-4xl font font-extrabold tracking-tight text-gray-900 sm:text-6xl">
-                            Summer styles are finally here
+                            Most Popular Tour in the World
                         </h1>
                         <p className="mt-4 text-xl text-gray-500">
-                            This year, our new summer collection will shelter you from the harsh elements of a world that doesn't care
+                            This year, our new top rated spots will shelter you from the harsh elements of a world that doesn't care
                             if you live or die.
                         </p>
                     </div>

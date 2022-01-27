@@ -7,7 +7,7 @@ const navigation = [
     { name: 'Dashboard', href: '#', current: true },
     { name: 'Tours', href: '#', current: false },
     { name: 'Blog', href: '#', current: false },
-    { name: 'login', href: '#', current: false },
+    { name: 'login', href: 'login', current: false },
 ]
 
 function classNames(...classes) {
@@ -85,7 +85,7 @@ export default function Navbar() {
                                         leaveFrom="transform opacity-100 scale-100"
                                         leaveTo="transform opacity-0 scale-95"
                                     >
-                                        <Menu.Items className="origin-top-right absolute right-0 mt-2 w-48 rounded-md shadow-lg py-1 bg-white ring-1 ring-black ring-opacity-5 focus:outline-none">
+                                        <Menu.Items className="z-10 origin-top-right absolute right-0 mt-2 w-48 rounded-md shadow-lg py-1 bg-white ring-1 ring-black ring-opacity-5 focus:outline-none">
                                             <Menu.Item>
                                                 {({ active }) => (
                                                     <a

@@ -1,18 +1,16 @@
 import React from 'react';
-import Navbar from '../Shared/Navbar/Navbar';
 import Hero from '../Hero/Hero';
 import Features from '../Features/Features';
-import Footer from '../Shared/Footer/Footer';
 import Carousel from '../Carousel/Carousel';
+import Blog from '../Blogs/Blogs';
 
 const Home = () => {
     return (
         <div>
-            <Navbar />
             <Hero />
+            <Blog />
             <Features />
             <Carousel />
-            <Footer />
         </div>
     );
 };

@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
+import Sidebar from '../Sidebar/Sidebar';
 
 const BlogDetails = () => {
     let { id } = useParams();
@@ -36,6 +37,7 @@ const BlogDetails = () => {
                     </p>
                 </div>
             </div>
+            <Sidebar />
         </div>
     );
 };

@@ -11,6 +11,8 @@ import OnlyBlogs from "./components/Blogs/OnlyBlogs/OnlyBlogs";
 import NextBlogs from "./components/Blogs/NextBlogs/NextBlogs";
 import Blogs from "./components/Blogs/Blogs";
 import About from "./components/About/About";
+import Tours from "./components/Tours/Tours";
+import TourDetails from "./components/Tours/TourDetails/TourDetails";
 
 function App() {
   return (
@@ -22,9 +24,9 @@ function App() {
           <Route path='/home' element={<Home />} />
           <Route path='/blog' element={<OnlyBlogs />} />
           <Route path='/about' element={<About />} />
-          {/* <Route path='/tours' element={<Services />} /> */}
-          {/* <Route path='/blog' element={<BlogsAndNews />} /> */}
-          <Route path='/booking/:id' element={<PrivateRoute><BlogDetails /></PrivateRoute>} />
+          <Route path='/tours' element={<Tours />} />
+          <Route path='/details/:id' element={<PrivateRoute><BlogDetails /></PrivateRoute>} />
+          <Route path='/booking/:id' element={<PrivateRoute><TourDetails /></PrivateRoute>} />
           <Route path='/login' element={<Login />} />
           <Route path='/register' element={<Register />} />
           <Route path='/nextBlog' element={<NextBlogs />} />

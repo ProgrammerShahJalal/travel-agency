@@ -40,7 +40,7 @@ export default class AutoPlay extends Component {
             ]
         };
         return (
-            <div className="my-3">
+            <div id="trips" className="my-3">
                 <h2 className="text-4xl font font-extrabold tracking-tight text-gray-900 sm:text-6xl text-center my-3">Recent Trips</h2>
                 <Slider {...settings}>
                     <div>

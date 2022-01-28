@@ -6,7 +6,7 @@ const NextBlog = ({ blog }) => {
     const { title, img, expense, rating, _id } = blog;
     return (
         <div>
-            <Link to={`/booking/${_id}`}>
+            <Link to={`/details/${_id}`}>
                 <div className="md:shrink-0 rounded-xl shadow-lg p-5 bg-white">
                     <img className="h-48 w-full object-cover md:h-full md:w-48 rounded-md" src={img} alt='' />
                     <h2 className="uppercase tracking-wide text-sm text-indigo-600 font-semibold truncate">{title}</h2>

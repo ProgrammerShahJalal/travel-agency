@@ -11,7 +11,6 @@ const navigation = [
     { name: 'Tours', to: 'tours', current: false },
     { name: 'Blog', to: 'blog', current: false },
     { name: 'About', to: 'about', current: false },
-    { name: 'Contact', to: 'contact', current: false },
 ]
 
 function classNames(...classes) {

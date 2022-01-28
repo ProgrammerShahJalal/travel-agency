@@ -7,10 +7,11 @@ import useAuth from '../../../hooks/useAuth';
 
 /* navigation menu */
 const navigation = [
-    { name: 'Dashboard', to: 'dashboard', current: false },
-    { name: 'Home', to: 'home', current: true },
+    { name: 'Home', to: 'home', current: false },
     { name: 'Tours', to: 'tours', current: false },
     { name: 'Blog', to: 'blog', current: false },
+    { name: 'About', to: 'about', current: false },
+    { name: 'Contact', to: 'contact', current: false },
 ]
 
 function classNames(...classes) {
@@ -57,6 +58,7 @@ export default function Navbar() {
                                                 {item.name}
                                             </Link>
                                         ))}
+                                        <button className='text-white'><Link to="/dashboard">Dashboard</Link></button>
                                     </div>
                                 </div>
                             </div>

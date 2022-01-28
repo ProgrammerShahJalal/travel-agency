@@ -7,6 +7,7 @@ import Navbar from "./components/Shared/Navbar/Navbar";
 import AuthProvider from "./Contexts/AuthProvider/AuthProvider";
 import BlogDetails from "./components/Blogs/BlogDetails/BlogDetails";
 import PrivateRoute from "./components/Login/PrivateRoute/PrivateRoute";
+import OnlyBlogs from "./components/Blogs/OnlyBlogs/OnlyBlogs";
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
         <Routes>
           <Route path='/' element={<Home />} />
           <Route path='/home' element={<Home />} />
+          <Route path='/blog' element={<OnlyBlogs />} />
           {/* <Route path='/tours' element={<Services />} /> */}
           {/* <Route path='/blog' element={<BlogsAndNews />} /> */}
           <Route path='/booking/:id' element={<PrivateRoute><BlogDetails /></PrivateRoute>} />

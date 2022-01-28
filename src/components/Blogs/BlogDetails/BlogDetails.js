@@ -18,17 +18,17 @@ const BlogDetails = () => {
     const { title, img, expense, rating, location, data, time } = blogDetails[0] || {};
 
     return (
-        <div className='max-w-md overflow-hidden md:max-w-2xl mx-auto'>
+        <div className='max-w-md overflow-hidden md:max-w-2xl mx-auto my-5'>
             <div className="md:shrink-0 rounded-xl shadow-lg p-5 bg-white">
                 <img className="h-auto w-full object-cover md:h-full md:w-full rounded-md" src={img} alt='' />
                 <h2 className='text-4xl font font-extrabold tracking-tight text-gray-900 sm:text-6xl text-center my-5'>{title}</h2>
                 <div className='flex justify-around items-center'>
-                    <p className="font-bold mt-2 text-cyan-500">Tour Place: {location}</p>
-                    <p className="font-bold mt-2 text-purple-500">Time: {time} days</p>
+                    <p className="font-bold mt-2 text-cyan-900">Tour Place: {location}</p>
+                    <p className="font-bold mt-2 text-purple-900">Time: {time} days</p>
                 </div>
                 <div className='flex justify-around items-center'>
-                    <p className="font-bold mt-2 text-cyan-500">Total Expense: ${expense}</p>
-                    <p className="font-bold mt-2 text-purple-500">Rating: {rating}</p>
+                    <p className="font-bold mt-2 text-cyan-900">Total Expense: ${expense}</p>
+                    <p className="font-bold mt-2 text-purple-900">Rating: {rating}</p>
                 </div>
                 <div>
                     <p className='text-justify'>

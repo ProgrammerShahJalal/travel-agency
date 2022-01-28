@@ -1,7 +1,8 @@
 /* This example requires Tailwind CSS v2.0+ */
-import { Fragment } from 'react'
-import { Disclosure, Menu, Transition } from '@headlessui/react'
-import { BellIcon, MenuIcon, XIcon } from '@heroicons/react/outline'
+import { Fragment } from 'react';
+import { Disclosure, Menu, Transition } from '@headlessui/react';
+import { BellIcon, MenuIcon, XIcon } from '@heroicons/react/outline';
+import { Link } from 'react-router-dom';
 
 const navigation = [
     { name: 'Dashboard', href: '#', current: true },
@@ -34,8 +35,8 @@ export default function Navbar() {
                             </div>
                             <div className="flex-1 flex items-center justify-center sm:items-stretch sm:justify-start">
                                 <div className="flex-shrink-0 flex items-center">
-                                    <h2 className="block lg:hidden h-8 w-auto text-white text-2xl">JTour</h2>
-                                    <h2 className="hidden lg:block h-8 w-auto text-white text-2xl">JTour</h2>
+                                    <h2 className="block lg:hidden h-8 w-auto text-white text-2xl"><Link to="/">JTour</Link></h2>
+                                    <h2 className="hidden lg:block h-8 w-auto text-white text-2xl"><Link to="/">JTour</Link></h2>
                                 </div>
                                 <div className="hidden sm:block sm:ml-6">
                                     <div className="flex space-x-4">

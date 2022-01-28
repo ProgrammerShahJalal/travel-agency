@@ -114,7 +114,7 @@ const Blogs = () => {
         </div>
     }
     return (<>
-        <div className='my-5 pb-5 bg-gray-100 w-full'>
+        <div className='my-5 bg-gray-100 w-full scroll-smooth'>
             <h2 className='text-4xl font font-extrabold tracking-tight text-gray-900 sm:text-6xl text-center my-5'>Our Blogs</h2>
             <div className='md:grid grid-cols-3 max-w-md overflow-hidden md:max-w-2xl gap-5 mx-auto'>
                 {

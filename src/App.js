@@ -10,6 +10,7 @@ import PrivateRoute from "./components/Login/PrivateRoute/PrivateRoute";
 import OnlyBlogs from "./components/Blogs/OnlyBlogs/OnlyBlogs";
 import NextBlogs from "./components/Blogs/NextBlogs/NextBlogs";
 import Blogs from "./components/Blogs/Blogs";
+import About from "./components/About/About";
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
           <Route path='/' element={<Home />} />
           <Route path='/home' element={<Home />} />
           <Route path='/blog' element={<OnlyBlogs />} />
+          <Route path='/about' element={<About />} />
           {/* <Route path='/tours' element={<Services />} /> */}
           {/* <Route path='/blog' element={<BlogsAndNews />} /> */}
           <Route path='/booking/:id' element={<PrivateRoute><BlogDetails /></PrivateRoute>} />

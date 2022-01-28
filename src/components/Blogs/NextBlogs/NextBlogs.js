@@ -127,7 +127,7 @@ const NextBlogs = () => {
             <h2 className='text-4xl font font-extrabold tracking-tight text-gray-900 sm:text-6xl text-center my-5'>Our Blogs</h2>
             <div className='md:grid grid-cols-3 max-w-md overflow-hidden md:max-w-2xl gap-3 mx-auto'>
                 {
-                    blogs.slice(0, 6).map(blog => <NextBlog key={blog._id} blog={blog}></NextBlog>)
+                    blogs.splice(0, 10).map(blog => <NextBlog key={blog._id} blog={blog}></NextBlog>)
                 }
             </div>
             <NextPagination />

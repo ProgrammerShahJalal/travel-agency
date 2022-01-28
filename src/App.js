@@ -8,6 +8,8 @@ import AuthProvider from "./Contexts/AuthProvider/AuthProvider";
 import BlogDetails from "./components/Blogs/BlogDetails/BlogDetails";
 import PrivateRoute from "./components/Login/PrivateRoute/PrivateRoute";
 import OnlyBlogs from "./components/Blogs/OnlyBlogs/OnlyBlogs";
+import NextBlogs from "./components/Blogs/NextBlogs/NextBlogs";
+import Blogs from "./components/Blogs/Blogs";
 
 function App() {
   return (
@@ -23,6 +25,8 @@ function App() {
           <Route path='/booking/:id' element={<PrivateRoute><BlogDetails /></PrivateRoute>} />
           <Route path='/login' element={<Login />} />
           <Route path='/register' element={<Register />} />
+          <Route path='/nextBlog' element={<NextBlogs />} />
+          <Route path='/preBlog' element={<Blogs />} />
         </Routes>
         <Footer />
       </Router>

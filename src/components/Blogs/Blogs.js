@@ -1,5 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import Blog from './Blog/Blog';
+import Pagination from './Pagination/Pagination';
+
 
 const Blogs = () => {
     const [blogs, setBlogs] = useState([]);
@@ -111,15 +113,18 @@ const Blogs = () => {
             </div>
         </div>
     }
-    return (
+    return (<>
         <div className='my-5 pb-5 bg-gray-100 w-full'>
             <h2 className='text-4xl font font-extrabold tracking-tight text-gray-900 sm:text-6xl text-center my-5'>Our Blogs</h2>
             <div className='md:grid grid-cols-3 max-w-md overflow-hidden md:max-w-2xl gap-3 mx-auto'>
                 {
-                    blogs.map(blog => <Blog key={blog._id} blog={blog}></Blog>)
+                    blogs.slice(0, 10).map(blog => <Blog key={blog._id} blog={blog}></Blog>)
                 }
             </div>
+            <Pagination />
         </div>
+    </>
+
     );
 };
 

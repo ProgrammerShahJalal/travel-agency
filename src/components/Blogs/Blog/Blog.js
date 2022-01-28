@@ -1,17 +1,21 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
+
 
 const Blog = ({ blog }) => {
-    const { title, img, expense, rating } = blog;
+    const { title, img, expense, rating, _id } = blog;
     return (
         <div>
-            <div className="md:shrink-0 rounded-xl shadow-lg">
-                <img className="h-48 w-full object-cover md:h-full md:w-48 rounded-md" src={img} alt='' />
-                <h2 className="uppercase tracking-wide text-sm text-indigo-500 font-semibold truncate">{title}</h2>
-                <div className='flex justify-around items-center'>
-                    <p className="mt-2 text-slate-500">${expense}</p>
-                    <p className="mt-2 text-slate-500">{rating}</p>
+            <Link to={`/booking/${_id}`}>
+                <div className="md:shrink-0 rounded-xl shadow-lg p-5 bg-white">
+                    <img className="h-48 w-full object-cover md:h-full md:w-48 rounded-md" src={img} alt='' />
+                    <h2 className="uppercase tracking-wide text-sm text-indigo-500 font-semibold truncate">{title}</h2>
+                    <div className='flex justify-around items-center'>
+                        <p className="font-bold mt-2 text-cyan-500">Cost: ${expense}</p>
+                        <p className="font-bold mt-2 text-purple-500">Rating: {rating}</p>
+                    </div>
                 </div>
-            </div>
+            </Link>
         </div>
     );
 };

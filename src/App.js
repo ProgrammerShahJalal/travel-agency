@@ -5,6 +5,8 @@ import Register from "./components/Login/Register/Register";
 import Footer from "./components/Shared/Footer/Footer";
 import Navbar from "./components/Shared/Navbar/Navbar";
 import AuthProvider from "./Contexts/AuthProvider/AuthProvider";
+import BlogDetails from "./components/Blogs/BlogDetails/BlogDetails";
+import PrivateRoute from "./components/Login/PrivateRoute/PrivateRoute";
 
 function App() {
   return (
@@ -14,9 +16,9 @@ function App() {
         <Routes>
           <Route path='/' element={<Home />} />
           <Route path='/home' element={<Home />} />
-          {/* <Route path='/services' element={<Services />} />
-          <Route path='/blog' element={<BlogsAndNews />} />
-          <Route path='/buynow/:id' element={<PrivateRoute><ServiceDetails /></PrivateRoute>} /> */}
+          {/* <Route path='/tours' element={<Services />} /> */}
+          {/* <Route path='/blog' element={<BlogsAndNews />} /> */}
+          <Route path='/booking/:id' element={<PrivateRoute><BlogDetails /></PrivateRoute>} />
           <Route path='/login' element={<Login />} />
           <Route path='/register' element={<Register />} />
         </Routes>

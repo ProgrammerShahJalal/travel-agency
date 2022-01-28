@@ -5,10 +5,11 @@ import { BellIcon, MenuIcon, XIcon } from '@heroicons/react/outline';
 import { Link } from 'react-router-dom';
 /* navigation menu */
 const navigation = [
-    { name: 'Dashboard', href: '#', current: true },
-    { name: 'Tours', href: '#', current: false },
-    { name: 'Blog', href: '#', current: false },
-    { name: 'login', href: 'login', current: false },
+    { name: 'Dashboard', to: 'dashboard', current: false },
+    { name: 'Home', to: 'home', current: true },
+    { name: 'Tours', to: 'tours', current: false },
+    { name: 'Blog', to: 'blog', current: false },
+    { name: 'login', to: 'login', current: false },
 ]
 
 function classNames(...classes) {
@@ -41,9 +42,9 @@ export default function Navbar() {
                                 <div className="hidden sm:block sm:ml-6">
                                     <div className="flex space-x-4">
                                         {navigation.map((item) => (
-                                            <a
+                                            <Link
                                                 key={item.name}
-                                                href={item.href}
+                                                to={item.to}
                                                 className={classNames(
                                                     item.current ? 'bg-fuchsia-500 text-white' : 'text-gray-300 hover:bg-fuchsia-500 hover:text-white',
                                                     'px-3 py-2 rounded-md text-sm font-medium'
@@ -51,7 +52,7 @@ export default function Navbar() {
                                                 aria-current={item.current ? 'page' : undefined}
                                             >
                                                 {item.name}
-                                            </a>
+                                            </Link>
                                         ))}
                                     </div>
                                 </div>

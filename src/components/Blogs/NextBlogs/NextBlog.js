@@ -2,8 +2,8 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 
-const NextBlog = ({ blog }) => {
-    const { title, img, expense, rating, _id } = blog;
+const NextBlog = ({ nextBlog }) => {
+    const { title, img, expense, rating, _id } = nextBlog;
     return (
         <div>
             <Link to={`/details/${_id}`}>

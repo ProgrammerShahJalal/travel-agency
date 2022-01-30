@@ -9,7 +9,6 @@ import BlogDetails from "./components/Blogs/BlogDetails/BlogDetails";
 import PrivateRoute from "./components/Login/PrivateRoute/PrivateRoute";
 import OnlyBlogs from "./components/Blogs/OnlyBlogs/OnlyBlogs";
 import NextBlogs from "./components/Blogs/NextBlogs/NextBlogs";
-import Blogs from "./components/Blogs/Blogs";
 import About from "./components/About/About";
 import Tours from "./components/Tours/Tours";
 import TourDetails from "./components/Tours/TourDetails/TourDetails";

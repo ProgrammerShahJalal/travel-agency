@@ -6,7 +6,7 @@ import NextBlog from './NextBlog';
 import Carousel from '../../Carousel/Carousel';
 
 const NextBlogs = () => {
-    const [blogs, setBlogs] = useState([]);
+    const [nextBlogs, setNextBlogs] = useState([]);
     const [isLoading, setIsLoading] = useState(true);
 
     useEffect(() => {
@@ -15,7 +15,7 @@ const NextBlogs = () => {
             .then(res => res.json())
             .then(data => {
                 setIsLoading(false);
-                setBlogs(data);
+                setNextBlogs(data);
             })
     }, [])
     if (isLoading) {
@@ -127,7 +127,7 @@ const NextBlogs = () => {
             <h2 className='text-4xl font font-extrabold tracking-tight text-gray-900 sm:text-6xl text-center my-5'>Our Blogs</h2>
             <div className='md:grid grid-cols-3 max-w-md overflow-hidden md:max-w-2xl gap-5 mx-auto'>
                 {
-                    blogs.splice(0, 10).map(blog => <NextBlog key={blog._id} blog={blog}></NextBlog>)
+                    nextBlogs.splice(0, 10).map(nextBlog => <NextBlog key={nextBlog._id} nextBlog={nextBlog}></NextBlog>)
                 }
             </div>
             <NextPagination />

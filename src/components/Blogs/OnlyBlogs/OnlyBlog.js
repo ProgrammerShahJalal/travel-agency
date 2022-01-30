@@ -6,7 +6,7 @@ const OnlyBlog = ({ blog }) => {
     const { title, img, data, _id } = blog;
     return (
         <div>
-            <Link to={`/booking/${_id}`}>
+            <Link to={`/details/${_id}`}>
                 <div className="max-w-md mx-auto bg-white rounded-xl shadow-md overflow-hidden md:max-w-2xl">
                     <div className="md:flex">
                         <div className="md:shrink-0">

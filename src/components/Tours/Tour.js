@@ -17,7 +17,7 @@ const Tour = ({ tour }) => {
 
                             <div className='flex justify-around items-center'>
                                 <p className="font-bold mt-2 text-cyan-800">${cost}</p>
-                                <button className="font-bold mt-2 bg-purple-800 text-white px-5 py-1 rounded-md">Booking</button>
+                                <button className="shrink font-bold mt-2 bg-purple-800 text-white px-5 py-1 rounded-md">Booking</button>
                             </div>
                         </div>
                     </div>

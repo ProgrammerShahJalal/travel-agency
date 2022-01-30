@@ -32,7 +32,7 @@ export default function Sidebar() {
                             leaveFrom="translate-x-0"
                             leaveTo="translate-x-full"
                         >
-                            <div className="relative w-screen max-w-md">
+                            <div className="relative w-screen max-w-lg">
                                 <Transition.Child
                                     as={Fragment}
                                     enter="ease-in-out duration-500"
@@ -62,7 +62,7 @@ export default function Sidebar() {
                                         <div className="absolute inset-0 px-4 sm:px-6">
                                             <div className="h-full border-2 border-dashed border-gray-200" aria-hidden="true" />
                                         </div>
-                                        {/* /End replace */}
+                                        {/* / */}
                                     </div>
                                 </div>
                             </div>

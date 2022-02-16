@@ -6,12 +6,5 @@ const firebaseConfig = {
     messagingSenderId: `${process.env.REACT_APP_FIREBASE_MESSAGING_SENDER_ID}`,
     appId: `${process.env.REACT_APP_FIREBASE_APP_ID}`
 };
-// const firebaseConfig = {
-//     apiKey: "AIzaSyCwtkrQ4LTmdDRymmE5RD4yKAS1EpRV3MY",
-//     authDomain: "travel-agency-247d7.firebaseapp.com",
-//     projectId: "travel-agency-247d7",
-//     storageBucket: "travel-agency-247d7.appspot.com",
-//     messagingSenderId: "585169983508",
-//     appId: "1:585169983508:web:e9528c4c312b2314b4af01"
-// };
+
 export default firebaseConfig;
